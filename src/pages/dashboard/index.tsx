@@ -8,7 +8,6 @@ import { FiRefreshCw } from 'react-icons/fi'
 import { setupAPIClient } from '../../services/api'
 import { useState } from 'react'
 
-
 type OrderProps = {
   id: string
   table: string | number
@@ -18,7 +17,7 @@ type OrderProps = {
 }
 
 interface HomeProps {
-  orders: OrderProps[];
+  orders: OrderProps[]
 }
 
 export default function Dashboard({ orders }: HomeProps){

@@ -1,11 +1,9 @@
-import { createContext, ReactNode, useState, useEffect } from 'react';
-
-import { api } from '../services/apiClient';
-
+import { createContext, ReactNode, useState, useEffect } from 'react'
+import { api } from '../services/apiClient'
 import { destroyCookie, setCookie, parseCookies } from 'nookies'
-import Router from 'next/router';
+import { toast } from 'react-toastify'
 
-import { toast } from 'react-toastify';
+import Router from 'next/router'
 
 type AuthContextData = {
   user: UserProps;

@@ -1,11 +1,12 @@
 import { FormEvent, useState, useContext } from 'react'
-import Head from 'next/head'
-import styles from '../../../styles/home.module.scss'
 import { Input } from '../../components/ui/Input'
 import { Button } from '../../components/ui/Button'
-import Link from 'next/link'
 import { AuthContext } from '../../contexts/AuthContext'
 import { toast } from 'react-toastify'
+
+import Link from 'next/link'
+import Head from 'next/head'
+import styles from '../../../styles/home.module.scss'
 
 export default function SignUp() {
   const { signUp } = useContext(AuthContext)

@@ -1,7 +1,7 @@
-import { ReactNode, ButtonHTMLAttributes } from 'react';
-import styles from './styles.module.scss';
-
+import { ReactNode, ButtonHTMLAttributes } from 'react'
 import { FaSpinner } from 'react-icons/fa'
+
+import styles from './styles.module.scss'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean,

@@ -1,10 +1,9 @@
-
 import Head from 'next/head';
 import styles from './styles.module.scss';
 
 import { toast } from 'react-toastify'
 import { useState, ChangeEvent, FormEvent } from 'react'
-import {Header} from '../../components/Header'
+import { Header } from '../../components/Header'
 import { canSSRAuth } from '../../utils/canSSRAuth'
 import { FiUpload } from 'react-icons/fi'
 import { setupAPIClient } from '../../services/api';
