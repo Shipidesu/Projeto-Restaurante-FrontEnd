@@ -1,12 +1,13 @@
 import { useContext, FormEvent, useState } from 'react'
-import Head from 'next/head'
-import styles from '../../styles/home.module.scss'
 import { Input } from '../components/ui/Input'
 import { Button } from '../components/ui/Button'
 import { AuthContext } from '../contexts/AuthContext'
-import Link from 'next/link'
 import { toast } from 'react-toastify'
 import { canSSRGuest } from '../utils/canSSRGuest'
+
+import Head from 'next/head'
+import styles from '../../styles/home.module.scss'
+import Link from 'next/link'
 
 export default function Home() {
   const { signIn } = useContext(AuthContext)
@@ -38,12 +39,9 @@ export default function Home() {
 
   return (
     <>
-    <Head>
-      <title>Faça seu login</title> 
-    </Head>
     <div className={styles.containerCenter}>
-
-      <div className={styles.login}>
+    <div className={styles.login}>
+      <h1>Faça o seu Login</h1>
         <form onSubmit={handleLogin}>
           <Input
             placeholder="Digite seu email"

@@ -8,15 +8,15 @@
 
 :root{
 
-  --white: #FFF;
+  --white: #fff;
   --black: #000;
 
-  --dark-900: #101026;
-  --dark-700: #1D1D2E;
+  --dark-900: #000;
+  --dark-700: #FFF;
 
   --gray-100: #8A8A8A;
-  --green-900: #3fffa3;
-  --red-900: #FF3F4B;
+  --green-900: #000;
+  --red-900: #000;
 
 }
 
@@ -30,7 +30,7 @@ a{
 }
 
 body{
-  background: var(--dark-700)
+  background-color: #FFE1AA;
 }
 
 body, input, textarea, select, button{

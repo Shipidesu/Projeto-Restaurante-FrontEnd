@@ -5,11 +5,34 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--gray-900);
+  background-color: #FFE1AA;
 }
 
+.empresa {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 0; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  background-color: #FFE1AA;
+}
+
+.header > * {
+  margin-right: 10px; 
+  font-size: 14px; 
+}
+
+
 .login{
-  margin-top: 2rem;
+  margin-top: -10rem;
   width: 600px;
   display: flex;
   align-items: center;
@@ -18,7 +41,7 @@
   padding: 2rem 1.5rem;
 
   h1{
-    color: var(--white);
+    color: #1E2236;
     padding-bottom: 1rem;
   }
 
@@ -37,7 +60,7 @@
 
 .text{
   margin-top: 1rem;
-  color: var(--white);
+  color: #1E2236;;
   cursor: pointer;
 }
 
